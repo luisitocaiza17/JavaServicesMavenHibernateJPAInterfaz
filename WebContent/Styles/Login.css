@@ -1,0 +1,66 @@
+body {
+}
+
+/*#principal {
+    background-image: url('../images/imagen-broker.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:white;
+    background-position: top;
+    width: 100%;
+}*/
+#loginp {
+    min-height: 100vh;
+    min-width: 100vw;
+    vertical-align:text-top;
+}
+
+#logo{
+    position:absolute;
+    top: 85vh;
+    left: 35vw;
+}
+
+#logoi{
+    width:25vw;
+}
+
+#logini {
+    background-image: url('../Images/fondo_pagina_inicio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    background-position: left;
+    min-height: 100vh;
+    width: 50%;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+#loginr {
+    width: 30%;
+    min-height: 100vh;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+#lform {
+    padding-top: 35vh;
+    padding-left: 5vw;
+    margin: 0 auto;
+    width: 290px;
+}
+
+input[type=text]{
+    height:30px;
+    font-size:16px;
+}
+input[type=password] {
+    height: 30px;
+    font-size: 16px;
+}
+
+#CajaLogin {
+    display: inline-block;
+}
+

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- start: META -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <title>Aplicativo Básico</title>
+    <style>
+        .loading-container {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 100px;
+            color: #fff;
+            text-align: center;
+            z-index: 100000;
+        }
+    </style>
+</head>
+<body id="principal" style="display:none;">
+    <!--<div id="logo"><img id="logoi" src="../Images/logo-portal-saludsa-brokers_w.png" /></div>-->
+    <div id="loginp">
+        <div id="logini"></div>
+        <div id="loginr">
+            <div id="CajaLogin">
+                <div id="lform" style="text-align:center">
+                    <div class="fieldBox">
+                        <img src="../Images/perfil2.png" height="20" width="20">&nbsp;&nbsp;
+                        <input id="txt_username" type="text" placeholder="Nombre de Usuario" style="color:#808080" />
+                    </div>
+                    <div class="fieldBox">
+                        <img src="../Images/candado2.png" height="20" width="20">&nbsp;&nbsp;
+                        <input id="txt_password" type="password" placeholder="Contraseña" style="color:#808080" />
+                    </div>
+                    <div class="fieldBox">
+                        <button id="btn_Ingresar">Ingresar Usuario</button>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div id="footer"></div>-->
+    <div id="loading-container" class="loading-container"><img src="../Images/preloading.gif" /><br><span id="loading-msg"></span></div>
+    <script src="../libs/headjs/head.min.js" data-headjs-load="../Scripts/Configure/Init.js"></script>
+</body>
+</html>

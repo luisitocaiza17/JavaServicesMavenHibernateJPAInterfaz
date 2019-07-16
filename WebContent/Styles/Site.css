@@ -1,0 +1,540 @@
+﻿/*@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(http://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISw.eot);
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#header {
+    background-color: #2196f3;
+}
+
+.barraheader {
+    width: 100%;
+    height: 12vh;
+    /*background-image: url('../images/logo-portal-saludsa-brokers_wm.png');*/
+    background-repeat: no-repeat;
+    background-position: initial;
+    /*background-color: #2196f3;*/
+    background-color: #0b76ca;
+    background-size: auto 14vh;
+    padding-top: 3vh;
+}
+
+
+#menu {
+    background-color: #0b76ca;
+}
+
+#content {
+    margin: 10px 10px 10px 10px;
+}
+
+#footer {
+    background-color: #cccccc;
+}
+
+#menuPrincipal {
+    background-color: #2196f3;
+    color: white;
+}
+
+
+    #menuPrincipal a {
+        color: white;
+    }
+
+        #menuPrincipal a:hover {
+            color: black;
+        }
+
+    #menuPrincipal > .k-last {
+        float: right;
+    }
+
+    #menuPrincipal li ul {
+        background-color: white;
+    }
+
+        #menuPrincipal li ul li a {
+            color: #BF53B6;
+        }
+
+
+
+#mobileMenu {
+    background-color: #2196f3;
+    color: white;
+}
+
+
+    #mobileMenu a {
+        color: white;
+        margin: 10px 10px 10px 10px;
+    }
+
+        #mobileMenu a:hover {
+            color: #2196f3;
+        }
+
+
+
+    #mobileMenu li ul {
+    }
+
+        #mobileMenu li ul li a {
+            margin: 10px 10px 10px 10px;
+            color: white;
+        }
+
+#links {
+    display: inline;
+}
+
+#mmenu {
+    display: none;
+}
+
+#mlinks {
+    display: none;
+}
+
+
+h1 {
+    color: #034694;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: white !important;
+    font-size: 17px;
+    font-weight: 600;
+    background: #034694;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0 0;
+    border: #707030 1px solid;
+}
+
+fieldset {
+    margin: 0px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #777777;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+
+iframe {
+    margin: 0px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #777777;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+
+label {
+    font-family: 'Raleway';
+    font-size: 14px !important;
+}
+
+p {
+    font-family: 'Raleway' !important;
+    font-size: 14px !important;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+.Centrado {
+    text-align: center;
+}
+
+input, input.k-textbox {
+    border: 1px solid #034694;
+    height: 32px;
+    padding: 0 20px;
+    margin-top: 5px;
+}
+
+.k-datepicker {
+    height: 32px;
+    margin-top: 5px;
+}
+
+.k-grid {
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #034694;
+    box-shadow: 3px 3px 10px #000020;
+}
+
+#tableDetalle {
+    font-size: 12px !important;
+}
+
+    #tableDetalle th {
+        height: 500px;
+    }
+
+/*headers*/
+
+.k-grid th.k-header,
+.k-grid-header {
+    background: #034694 !important;
+}
+
+    .k-grid th.k-header,
+    .k-grid th.k-header .k-link {
+        color: white
+    }
+
+/*.k-grid .k-master-row {
+    background-color: #EB854B !important;
+    color: white;
+}*/
+
+.fieldBoxDefinido {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    vertical-align: top;
+    width: 120px;
+}
+
+.fieldBoxDefinidoUnitario {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    vertical-align: top;
+    width: 180px;
+    text-align: left;
+}
+
+.fieldBoxDefinidoSmall {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    vertical-align: top;
+    width: 50px;
+    text-align: left;
+}
+
+.fieldBoxDefinidoMedio {
+    display: inline-block;
+    padding: 10px 12px 10px 10px;
+    vertical-align: top;
+    width: 115px;
+}
+
+.k-tabstrip {
+    background-color: #2196f3 !important;
+}
+
+    .k-tabstrip .k-item {
+        background-color: #2196f3 !important;
+    }
+
+        .k-tabstrip .k-item:hover {
+            background-color: #034694 !important;
+        }
+
+
+
+
+.k-window-titlebar {
+    background-color: #2196f3 !important;
+}
+
+
+
+.k-header .k-link {
+    text-align: center;
+}
+
+/*#menu {
+    width: 90vw;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+    #menu a {
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}*/
+
+#menuPrincipal .k-menu {
+    border: 0;
+    background-color: #2196f3 !important;
+}
+
+.fieldBox {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    vertical-align: top;
+}
+
+    .fieldBox label {
+        font-size: 16px;
+        color: #808080;
+    }
+
+/*headers*/
+
+.k-grid th.k-header,
+.k-grid-header {
+    background: #2196f3 !important;
+}
+
+    .k-grid th.k-header,
+    .k-grid th.k-header .k-link {
+        color: white
+    }
+/**scrollbar de la grillas**/
+.k-virtual-scrollable-wrap td {
+    font-size: 14px;
+    white-space: nowrap;
+    line-height: 13px;
+}
+
+#grid .k-virtual-scrollable-wrap tr td {
+    height: 15px
+}
+
+.halfPanel {
+    display: inline-block;
+    max-width: 47%;
+    vertical-align: top;
+    margin: 10px 10px 10px 10px;
+}
+
+.menutextBlock {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 5px;
+}
+
+.menuDobleColumna {
+    margin: 15px 15px 15px 15px;
+    width: 900px !important;
+    text-align: left;
+    white-space: normal !important;
+}
+
+.menuBoton {
+    width: 47%;
+    max-width: 47%;
+    display: inline-block
+}
+
+.CenterBox {
+    width: 75%;
+    max-width: 960px;
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #999999;
+    
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+
+@media only screen and (max-width : 640px) {
+    #links {
+        display: none;
+    }
+
+    #mmenu {
+        display: inline;
+    }
+
+    #mlinks {
+        display: inline;
+    }
+
+    .halfPanel {
+        display: inline-block;
+        max-width: 95%;
+        vertical-align: top;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .menutextBlock {
+        display: none;
+        vertical-align: top;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .menuDobleColumna {
+        margin: 15px 15px 15px 15px;
+        width: 95% !important;
+        text-align: left;
+        white-space: normal !important;
+    }
+
+    .menuBoton {
+        width: 95%;
+        max-width: 95%;
+        display: inline-block
+    }
+
+    .CenterBox {
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card-header {
+    background: #2196f3 !important;
+    color: white;
+}
+
+.tomate {
+    color: #2196f3 !important;
+    font-size: 17px;
+}
+
+.k-textbox.medium {
+    height: 50px !important;
+}
+
+/*Textos del header*/
+#textHeader {
+    width: 100%;
+    text-align: right;
+    color: white;
+    padding-top: 1vh;
+    display:inline-block;
+}
+
+#Initseparator {
+    display: inline;
+}
+
+#razonSocialCorredor {
+    /*text-shadow: 2px 2px #000000;*/
+    font-size: 18px;
+    /*font-style: italic;*/
+    /*color: #728595;*/
+    display: inline-block;
+}
+
+#lbl_UsuarioLogueado {
+    font-size: 12px;
+    /*color: #728595;*/
+    display: inline-block;
+}
+
+
+@media (max-width: 800px) {
+
+    #textHeader {
+        width: 100%;
+        text-align: right;
+        color: white;
+        padding-top: 1vh;
+        display: none;
+    }
+
+    #Initseparator {
+        display: none;
+    }
+
+    #razonSocialCorredor {
+        /*text-shadow: 2px 2px #000000;*/
+        font-size: 15px;
+        /*font-style: italic;*/
+        color: white;
+        display: none;
+    }
+
+    #lbl_UsuarioLogueado {
+        font-size: 12px;
+        color: white;
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .barraheader {
+        width: 100%;
+        height: 19vh;
+    }
+
+    #textHeader {
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding-top: 9vh;
+        display: none;
+    }
+
+    #Initseparator {
+        display: none;
+    }
+
+    #razonSocialCorredor {
+        /*text-shadow: 2px 2px #000000;*/
+        font-size: 15px;
+        /*font-style: italic;*/
+        color: white;
+        display: none;
+    }
+
+    #lbl_UsuarioLogueado {
+        font-size: 12px;
+        color: white;
+        display: none;
+    }
+}
+
+h1 {
+    font-family: 'Raleway';
+}
+
+h2 {
+    font-family: 'Raleway';
+}
+
+h3 {
+    font-family: 'Raleway';
+}
+
+h4 {
+    font-family: 'Raleway';
+}
+
+p {
+    font-family: 'Raleway';
+}
+
+label {
+    font-family: 'Raleway';
+}

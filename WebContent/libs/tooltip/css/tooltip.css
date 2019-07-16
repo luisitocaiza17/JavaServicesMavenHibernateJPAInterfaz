@@ -1,0 +1,15 @@
+/*
+ * Tooltip.js styles
+ */
+
+#tooltip {
+    position: absolute;
+    background-color: forestgreen;
+    color: #ffffff;
+    padding: 8px;
+    z-index: 999;
+}
+
+    #tooltip.alt-tooltip {
+        background-color: forestgreen;
+    }
