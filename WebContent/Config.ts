@@ -1,7 +1,7 @@
-/// <reference path="libs/kendo-ui/kendo-ui.d.ts" />
-/// <reference path="libs/jquery/jquery.d.ts" />
+/// <reference path="Scripts/Configure/typings/kendo-ui/kendo-ui.d.ts" />
+/// <reference path="Scripts/Configure/typings/jquery/jquery.d.ts" />
 /// <reference path="Scripts/Configure/Init.ts" />
-var servicioFuncionalidades = 'http://localhost:4259/WebDemo/api/';
+var serviceMain = 'http://localhost:1881/JavaServicesMavenHibernateJPA/webresources/';
 
 //compila
 var SessionTimeOut = 20; // Tiempo de sesión en minutos

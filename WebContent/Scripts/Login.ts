@@ -1,7 +1,8 @@
 ﻿/// <reference path="../Config.ts" />
+/// <reference path="../Scripts/Configure/Proxy.ts" />
 
 head.ready(function () {
-    var UsuarioLogueado: UsuarioEntity;
+    var UsuarioLogueado: persona;
     // Inicializaciones
     $('#btn_Ingresar').kendoButton();
     
@@ -29,17 +30,18 @@ head.ready(function () {
         
     function Ingresar() {
 
-        var usr: UsuarioEntity = new UsuarioEntity();
+        var usr: Login = new Login();
         var usuario = $('#txt_username').val().toString();
         var password = $('#txt_password').val().toString();
         if (usuario == null || usuario == '' || password == null || password == '')
             return alert('El usuario y contraseña deben estar llenos.');
-        get$Login$LoginVerificacion(usuario, password, function (result: Msg) {
-            if (result == undefined) 
-                return alert('Ha ocurrido un problema en la obtención de datos del servidor.');
-            if (result.Estado == 'False')
+        usr.nombre=usuario;
+        usr.password=password;
+        post$Login$ValidateUser(usr, function (result: Msg) {            
+            if (result.status != 'OK')
                 return alert('EL usuario o contraseña son incorrectos');
-            UsuarioLogueado = <UsuarioEntity>result.Datos;
+            var validacionLogueo=<Login>result.data;
+            UsuarioLogueado = validacionLogueo.persona;
             TerminarInicioSesion();
             
         }, function (error: Msg) {

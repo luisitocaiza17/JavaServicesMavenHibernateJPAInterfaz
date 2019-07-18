@@ -1,4 +1,5 @@
 /// <reference path="../Config.ts" />
+/// <reference path="../Scripts/Configure/Proxy.ts" />
 head.ready(function () {
     var UsuarioLogueado;
     // Inicializaciones
@@ -22,17 +23,18 @@ head.ready(function () {
         Ingresar();
     });
     function Ingresar() {
-        var usr = new UsuarioEntity();
+        var usr = new Login();
         var usuario = $('#txt_username').val().toString();
         var password = $('#txt_password').val().toString();
         if (usuario == null || usuario == '' || password == null || password == '')
             return alert('El usuario y contraseña deben estar llenos.');
-        get$Login$LoginVerificacion(usuario, password, function (result) {
-            if (result == undefined)
-                return alert('Ha ocurrido un problema en la obtención de datos del servidor.');
-            if (result.Estado == 'False')
+        usr.nombre = usuario;
+        usr.password = password;
+        post$Login$ValidateUser(usr, function (result) {
+            if (result.status != 'OK')
                 return alert('EL usuario o contraseña son incorrectos');
-            UsuarioLogueado = result.Datos;
+            var validacionLogueo = result.data;
+            UsuarioLogueado = validacionLogueo.persona;
             TerminarInicioSesion();
         }, function (error) {
             //// almacena variables de sesión
